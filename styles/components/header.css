@@ -1,8 +1,18 @@
 /* Screen smaller than 475px (default) */
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
+}
 
-
-
+.nav__menu {
+    display: none;
+}
 
 
 
@@ -17,12 +27,54 @@
 
 
 /* md */
-/* @media (min-width: 768px) {} */
+ @media (min-width: 768px) {
+    .nav__menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        gap: 1.5em;
+        align-items: center;
+    }
+
+    .nav__link {
+        font-size: var(--size-xs);
+        color: var(--clr-light);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+
+        transition: color 0.3 ease;
+    }
+
+    .nav__link:hover {
+        color: var(--clr-yellow);
+    }
+
+    .nav__line {
+        border: 1px solid var(--clr-light);
+        padding-top: 1.5em;
+    }
+
+    .nav__sun {
+        display: block;
+        color: var(--clr-light);
+        width: var(--size-base);
+        height: var(--size-base);
+    }
+ } 
 
 
 /* Lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    .nav__link {
+        font-size: var(--size-sm);
+    }
 
+    .nav__sun {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+}  
 
 /* xL */
 /* @media (min-width: 1280px) {}  */
