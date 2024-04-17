@@ -1,14 +1,27 @@
 /* Screen smaller than 475px (default) */
 
 .header {
-    display: flex;
-    justify-content: center;
+    display: flex;  
+    justify-content: flex-start;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
     z-index: 9999;
 }
+
+.logo {
+    display: block;
+    width: var(--size-10xl);
+    height: var(--size-10xl);
+
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
 
 .nav__menu {
     display: none;
@@ -40,7 +53,7 @@
         font-size: var(--size-xs);
         color: var(--clr-light);
         text-decoration: none;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
         font-weight: 600;
 
         transition: color 0.3 ease;
