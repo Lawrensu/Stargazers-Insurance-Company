@@ -2,19 +2,20 @@
     display: inline-block;
     font-weight: 600;
     text-decoration: none;
-    letter-spacing: -0.05em;
-    background-color: var(--clr-rose);
-    color: #f1f5f9;
+    letter-spacing: -0.02em;
+    background-color: var(--clr-yellow);
+    color: var(--clr-dark);
     padding: 0.5em 1em;
     border-radius: 6px;
-    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-orange);
 
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 .btn:hover {
+    color: var(--clr-light);
     transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25), 0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25), 0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-orange);
 }
 
 .container {
