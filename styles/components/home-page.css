@@ -1,0 +1,173 @@
+/* Mobile first style is the standard (using min-width) */
+/* If Desktop first style then (max-width) */
+
+
+/* Introduction part */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5em;
+}
+
+.introduction__desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.introduction__title {
+    font-size: var(--size-7xl);
+    font-weight: 800;
+    line-height: var(--size-8xl);
+    letter-spacing: -0.02em;
+}
+
+.introduction__desc {
+    font-size: var(--size-base);
+    color: var(--clr-peach);
+}
+
+
+/* Who We Are part */
+.who {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    margin-top: 5em;
+}
+
+.who__img {
+    width: 35em;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.who__desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.who__title {
+    font-size: var(--size-6xl);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.who__desc {
+    font-size: var(--size-base);
+    color: var(--clr-peach);
+    max-width: 60ch;
+    line-height: var(--size-4xl);
+}
+
+
+/* Why choose us part */
+.why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    gap: 2em;
+}
+
+.why__title {
+    font-size: var(--size-6xl);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.why__desc {
+    font-size: var(--size-base);
+    color: var(--clr-peach);
+    text-align: center;
+}
+
+
+
+
+/* xs */ 
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+
+/* md */
+@media (min-width: 768px) {
+    
+    .introduction__desc-wrapper {
+        gap: 2.5em;
+    }
+    
+    .introduction__title {
+        font-size: var(--size-7xl);
+        line-height: var(--size-9xl);
+    }
+    
+    .introduction__desc {
+        font-size: var(--size-lg);
+    }
+
+    /* Who We Are part */
+    .who {
+        flex-direction: row;
+        text-align: left;
+        gap: 2em;
+    }
+    
+    .who__desc-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .who__title {
+        font-size: var(--size-6xl);
+    }
+    
+    .who__desc {
+        font-size: var(--size-base);
+        max-width: 55ch;
+    }
+}  
+
+
+/* Lg */
+@media (min-width: 1024px) {
+    .introduction__title {
+        font-size: var(--size-8xl);
+    }
+    
+    .introduction__desc {
+        font-size: var(--size-xl);
+    }
+
+    .who {
+        gap: 1em;
+    }
+
+    /* Who We Are part */
+    .who__title {
+        font-size: var(--size-7xl);
+    }
+    
+    .who__desc {
+        font-size: var(--size-lg);
+        max-width: 50ch;
+    }
+}  
+
+/* xL */
+@media (min-width: 1280px) {
+    .who {
+        gap: 1em;
+    }
+} 
+
+
+/* 2xL */
+ /* @media (min-width: 1536px) { } */
