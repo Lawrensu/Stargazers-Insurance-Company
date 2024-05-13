@@ -78,7 +78,7 @@
 
 .why__desc {
     font-size: var(--size-base);
-    color: var(--clr-peach);
+    color: var(--clr-yellow);
     text-align: center;
 }
 
@@ -86,11 +86,13 @@
     display: grid;
     grid-gap: 1.5em;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-rows: auto auto;
 }
 
 .why__box {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
     padding: 1rem;
     gap: 1em;
     text-align: center;
@@ -210,8 +212,15 @@
 
 /* xL */
 @media (min-width: 1280px) {
+
     .who {
         gap: 1em;
+    }
+
+
+    /* Why section */
+    .why__wrapper {
+        grid-gap: 2em;
     }
 } 
 
