@@ -98,8 +98,8 @@
     text-align: center;
 
     box-shadow: 0 1rem 1.5rem -0.2rem rgba(210, 154, 255, 0.199);
-    border-top: 5px solid var(--clr-pink);
-    background-color: var(--clr-peach);
+    border-top: 5px solid var(--clr-green);
+    background-color: var(--clr-orange);
     border-radius: 0.2em;
 }
 
@@ -107,6 +107,7 @@
     color: var(--clr-dark);
     font-size: var(--size-base);
     font-weight: 800;
+    text-decoration: underline var(--clr-green);
 }
 
 .why__explanation {
