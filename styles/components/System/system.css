@@ -1,8 +1,17 @@
 /* Default */
+.system__intro {
+    text-align: center;
+}
 
+.system_intro-title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
 
-
-
+.system_intro-desc {
+    font-size: var(--size-sm);
+    color: var(--clr-yellow);
+}
 
 
 /* Mobile first style is the standard (using min-width) */
