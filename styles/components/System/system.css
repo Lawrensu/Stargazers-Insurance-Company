@@ -13,6 +13,33 @@
     color: var(--clr-yellow);
 }
 
+.system {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.system div:nth-child(even) {
+    margin-bottom: 1rem;
+}
+
+.system__content { 
+    /* Maybe use subgrid/grid */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+.system__title {
+    font-size: var(--size-lg);
+    color: var(--clr-light);
+}
+
+.system__description {
+    font-size: var(--size-sm);
+    color: var(--clr-yellow);
+}
 
 /* Mobile first style is the standard (using min-width) */
 /* If Desktop first style then (max-width) */
@@ -21,7 +48,68 @@
 /* @media (min-width: 475px) {} */
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+    .system {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: 
+        'system__img1 system__content1'
+        'system__content2 system__img2'
+        'system__img3 system__content3'
+        'system__content4 system__img4';
+
+        /* shorthand for justify-item and align item */
+        place-items: center;
+    }
+
+    /* Grid Images */
+    .system__img1 {
+        grid-area: system__img1;
+    }
+
+    .system__content1 {
+        grid-area: system__content1;
+    }
+
+    .system__img2 {
+        grid-area: system__img2;
+    }
+
+    .system__content2 {
+        grid-area: system__content2;
+    }
+
+    .system__img3 {
+        grid-area: system__img3;
+    }
+
+    .system__content3 {
+        grid-area: system__content3;
+    }
+
+    .system__img4 {
+        grid-area: system__img4;
+    }
+
+    .system__content4 {
+        grid-area: system__content4;
+    }
+
+
+
+
+
+
+
+
+
+
+    .system__description {
+        font-size: var(--size-sm);
+        color: var(--clr-yellow);
+        max-width: 40ch;
+    }
+} 
 
 
 /* md */
