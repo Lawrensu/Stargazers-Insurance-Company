@@ -5,6 +5,7 @@ import '../styles/components/header.css';
 import '../styles/components/footer.css';
 import '../styles/components/home-page.css';
 import '../styles/components/System/system.css';
+import '../styles/components/Agents/agents.css';
 
 
 
