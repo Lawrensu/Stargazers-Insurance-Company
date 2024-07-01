@@ -170,6 +170,10 @@
         gap: 1.5em;
     }
 
+    .system__title {
+        font-size: var(--size-3xl);
+    }
+
     .system__description {
         font-size: var(--size-md);
         max-width: 40ch;
@@ -182,4 +186,25 @@
 
 
 /* 2xL */
- /* @media (min-width: 1536px) { } */
+@media (min-width: 1536px) { 
+    .system_intro-title {
+        font-size: var(--size-4xl);
+    }
+
+    .system_intro-desc {
+        font-size: var(--size-2xl);
+    }
+
+    .system__content {
+        gap: 1.5em;
+    }
+
+    .system__description {
+        font-size: var(--size-lg);
+        max-width: 40ch;
+    }
+    
+    .system__content-list {
+        font-size: var(--size-lg);
+    }
+}
