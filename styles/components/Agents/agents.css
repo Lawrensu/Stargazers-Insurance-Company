@@ -1,6 +1,18 @@
 /* Mobile first style is the standard (using min-width) */
 /* If Desktop first style then (max-width) */
 
+.agents__intro {
+    text-align: center;
+}
+
+.agents__title {
+    font-size: var(--size-lg);
+}
+
+.agents__description {
+    font-size: var(--size-base);
+}
+
 /* xs */ 
 /* @media (min-width: 475px) {} */
 
@@ -10,10 +22,30 @@
 /* md */
 @media (min-width: 768px) {
 
+    .agents__title {
+        font-size: var(--size-2xl);
+    }
+    
+    .agents__description {
+        font-size: var(--size-lg);
+    }
 
 
-    .carousel__track {
-        list-style-type: none;
+    .agents__carousel {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden; /* Hide slides that overflow the container's bounds */
+    }
+
+    .carousel__track-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .agents__img {
+        width: 30em;
+        border-radius: 1em;
     }
 }
 
@@ -23,7 +55,15 @@
 
 
 /* xL */
-/* @media (min-width: 1280px) {} */
+@media (min-width: 1280px) {
+    .agents__title {
+        font-size: var(--size-3xl);
+    }
+    
+    .agents__description {
+        font-size: var(--size-xl);
+    }
+}
 
 
 /* 2xL */

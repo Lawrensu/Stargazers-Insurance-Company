@@ -175,12 +175,12 @@
     }
 
     .system__description {
-        font-size: var(--size-md);
+        font-size: var(--size-xl);
         max-width: 40ch;
     }
     
     .system__content-list {
-        font-size: var(--size-md);
+        font-size: var(--size-xl);
     }
 } 
 
